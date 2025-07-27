@@ -32,6 +32,9 @@ app.use(express.json()); // for JSON parsing
       res.send("Hello");
     });
 
+    app.get("/server", (req, res) => {
+      res.send("Hello 1");
+    });
     app.listen(PORT, () => {
       console.log(`🚀 Server started on http://localhost:${PORT}`);
     });
